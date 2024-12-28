@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7fff22bd.css",
+    "main.js": "/static/js/main.17e979a4.js",
+    "static/js/146.5c94e8ba.chunk.js": "/static/js/146.5c94e8ba.chunk.js",
+    "static/media/Vazirmatn-Regular.ttf": "/static/media/Vazirmatn-Regular.f08bc22d4f5bb01fb82f.ttf",
+    "static/media/Vazirmatn-Bold.woff2": "/static/media/Vazirmatn-Bold.0d6a47ce8c185a9436b2.woff2",
+    "static/media/Vazirmatn-Regular.woff2": "/static/media/Vazirmatn-Regular.58c84f666915410c0ba8.woff2",
+    "static/media/logo.png": "/static/media/logo.931247911f3e1afdf881.png",
+    "static/media/instagram.png": "/static/media/instagram.2d5cedd576ca1a740d7c.png",
+    "static/media/telegram.png": "/static/media/telegram.b76beae5b2e76931bec1.png",
+    "static/media/twitter.png": "/static/media/twitter.894988327f8d68209e91.png",
+    "index.html": "/index.html",
+    "main.7fff22bd.css.map": "/static/css/main.7fff22bd.css.map",
+    "main.17e979a4.js.map": "/static/js/main.17e979a4.js.map",
+    "146.5c94e8ba.chunk.js.map": "/static/js/146.5c94e8ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fff22bd.css",
+    "static/js/main.17e979a4.js"
+  ]
+}
