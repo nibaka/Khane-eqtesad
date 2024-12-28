@@ -1,0 +1,238 @@
+/* Layout */
+.latest-news-section {
+  padding: 40px 10%; /* Adjust padding for responsiveness */
+  color: #333;
+  direction: rtl;
+}
+
+.latest-news-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+}
+
+/* Main Content */
+.main-content-latest {
+  flex: 3;
+  min-width: 0; /* Prevent overflowing */
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 2rem; /* Use relative units for responsiveness */
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #004B8D;
+  display: inline-block;
+}
+
+/* Grid Layout */
+.news-grid-latest {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+  gap: 20px;
+}
+
+/* News Card */
+.news-card-latest {
+  padding: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.news-placeholder-latest {
+  height: 150px;
+  background-color: #ddd;
+}
+
+/* Detailed Posts */
+.news-detailed-card {
+  display: flex;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-detailed-image-placeholder {
+  width: 300px;
+  height: 200px;
+  background-color: #ccc;
+}
+
+.news-detailed-content {
+  padding: 15px;
+}
+
+.news-tag-latest {
+  background-color: #004B8D;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 6px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.news-detailed-title {
+  font-size: 1.125rem; /* Responsive font size */
+  font-weight: bold;
+}
+
+.news-detailed-description {
+  color: #777;
+  font-size: 0.875rem; /* Smaller font for description */
+}
+
+/* Load More Button */
+.load-more-btn {
+  padding: 10px 20px;
+  background-color: #004B8D;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Vazirmatn", Arial, sans-serif !important;
+}
+
+.load-more-btn:hover {
+  background-color: #003366;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  min-width: 0; /* Prevent overflow */
+  padding-top: 20px;
+}
+
+.sidebar-title {
+  font-size: 1.25rem; /* Adjust title size for responsiveness */
+  margin-bottom: 15px;
+  border-bottom: 2px solid #004B8D;
+}
+
+.social-box-latest {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-item-latest {
+  display: flex;
+  align-items: center;
+}
+
+.social-link-latest {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-link-latest:hover {
+  opacity: 0.8;
+}
+
+.social-icon-latest {
+  width: 24px;
+  height: 24px;
+}
+
+.world-news {
+  padding: 35px 0;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .latest-news-container {
+    flex-direction: column; /* Stack the main content and sidebar */
+  }
+
+  .main-content-latest {
+    flex: 1; /* Allow it to take full width */
+  }
+
+  .news-grid-latest {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+
+  .section-title {
+    font-size: 1.75rem; /* Adjust section title size */
+  }
+}
+
+/* For smaller screens (phones) */
+@media (max-width: 768px) {
+  .news-grid-latest {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+
+  .section-title {
+    font-size: 1.5rem; /* Adjust section title size */
+  }
+
+  .news-detailed-card {
+    flex-direction: column; /* Stack the detailed card items */
+  }
+
+  .news-detailed-image-placeholder {
+    width: 100%; /* Make the image placeholder responsive */
+    height: auto;
+  }
+
+  .news-detailed-content {
+    padding: 10px;
+  }
+
+  .news-detailed-title {
+    font-size: 1.125rem; /* Adjust title font size */
+  }
+
+  .news-detailed-description {
+    font-size: 0.875rem; /* Adjust description font size */
+  }
+
+  .load-more-btn {
+    padding: 8px 16px; /* Smaller button padding for mobile */
+  }
+
+  .sidebar {
+    flex: 1; /* Allow the sidebar to take full width on small screens */
+    margin-top: 20px;
+  }
+
+  .social-box-latest {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .social-item-latest {
+    width: 48%; /* Adjust for two items per row */
+  }
+
+  .sidebar-title {
+    font-size: 1.125rem; /* Adjust title size */
+  }
+}
+
+/* For very small screens (phones under 480px) */
+@media (max-width: 480px) {
+  .news-detailed-card {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .news-detailed-image-placeholder {
+    width: 100%; /* Full width for image */
+    height: 180px; /* Adjust height */
+  }
+
+  .social-item-latest {
+    width: 100%; /* Stack the social items */
+  }
+
+  .social-link-latest {
+    text-align: center; /* Center-align the links */
+  }
+}

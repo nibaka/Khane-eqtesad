@@ -1,0 +1,109 @@
+/* General Footer Styles */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 30px 0;
+
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Footer Sections */
+  .footer-section {
+    flex: 1;
+    margin: 0 15px;
+  }
+  
+  .footer-title {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #0064BD;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .logo-bold {
+    color: #0064BD;
+  }
+  
+  .logo-dot {
+    color: #0064BD;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+  }
+  
+  /* News Items */
+  .footer-news-item {
+    margin-bottom: 15px;
+  }
+  
+  .footer-news-item span {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .news-date {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 5px;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    border-top: 1px solid #222;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  .footer-bottom p {
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  .footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .footer-nav a:hover {
+    color: #004B8D;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-section {
+      margin: 10px 0;
+    }
+  
+    .footer-nav a {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+  

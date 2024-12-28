@@ -1,0 +1,175 @@
+/* Video Section Container */
+.video-section {
+  background-color: #1f1d1d; /* Black background */
+  color: white;
+  padding: 20px 150px;
+  direction: rtl; /* Right-to-left for Persian layout */
+}
+
+/* Video Section Title */
+.video-section-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: right;
+  color: #fff;
+}
+
+/* Layout Container */
+.video-section-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Large Placeholder */
+.video-large {
+  flex: 2; /* Takes up most space */
+  display: flex;
+  flex-direction: column;
+}
+
+.video-placeholder-large {
+  width: 100%;
+  height: 400px;
+  background-color: #444; /* Placeholder color */
+}
+
+.video-large-title {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Small Placeholder Boxes */
+.video-small-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.video-small {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.video-placeholder-small {
+  width: 120px;
+  height: 70px;
+  background-color: #555; /* Placeholder color */
+}
+
+.video-small-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.video-small-title {
+  font-size: 12px;
+  color: #ddd;
+  font-weight: bold;
+}
+
+.video-small-duration {
+  font-size: 10px;
+  color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .video-section-container {
+    flex-direction: column;
+  }
+
+  .video-small-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .video-small {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start; /* Align titles with thumbnails */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stack video sections vertically on smaller tablets */
+  .video-section-container {
+    flex-direction: column;
+  }
+
+  /* Adjust small video container to allow scrolling */
+  .video-small-container {
+    flex-direction: row;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    gap: 10px;
+  }
+
+  .video-placeholder-small {
+    width: 100px;
+    height: 60px; /* Resize small video placeholders */
+  }
+
+  .video-placeholder-large {
+    height: 250px; /* Smaller large video placeholder on smaller screens */
+  }
+
+  /* Increase text size for small screens */
+  .video-large-title {
+    font-size: 14px;
+  }
+
+  .video-small-title {
+    font-size: 14px; /* Larger font for small titles */
+  }
+
+  .video-small-duration {
+    font-size: 12px; /* Larger font for duration */
+  }
+}
+
+@media (max-width: 480px) {
+  /* For very small devices (phones) */
+  .video-section {
+    padding: 15px 10px; /* Reduce padding for mobile */
+  }
+
+  .video-section-title {
+    font-size: 18px; /* Make title smaller on mobile */
+  }
+
+  /* Adjust video sections for smaller screens */
+  .video-section-container {
+    flex-direction: column;
+  }
+
+  .video-large {
+    flex: 1;
+    height: 200px; /* Smaller height for large video on mobile */
+  }
+
+  .video-placeholder-large {
+    height: 200px; /* Smaller large video placeholder */
+  }
+
+  .video-small-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .video-placeholder-small {
+    width: 90px; /* Smaller placeholder size on mobile */
+    height: 50px;
+  }
+
+  .video-small-title {
+    font-size: 14px; /* Make small video titles larger on mobile */
+  }
+
+  .video-small-duration {
+    font-size: 12px; /* Adjust duration text for mobile */
+  }
+}

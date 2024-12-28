@@ -1,0 +1,45 @@
+/* Sidebar News List - Latest */
+.sidebar-news-list-latest {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    
+  }
+
+  /* Individual News Item - Latest */
+  .news-item-latest {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #f0f0f0; /* Light border between items */
+    padding-bottom: 10px;
+  }
+  
+  /* Placeholder Thumbnail - Latest */
+  .news-thumbnail-latest {
+    flex: 0 0 60px;
+    height: 60px;
+    background-color: #ddd; /* Light gray placeholder */
+    /* border-radius: 5px; */
+  }
+  
+  /* News Details - Latest */
+  .news-details-latest {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .news-title-latest {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .news-date-latest {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+  }
+  

@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styling */
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 0px 10px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Left Side: Time and Social Media Icons */
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+ /* Date Styling */
+.date {
+    font-size: 13px;
+    color: #f1f1f1;
+    margin-right: 10px;
+    direction: ltr;
+  }
+  
+  @media (max-width: 480px) {
+    .date {
+      font-size: 13px;
+    }
+  
+    .social-icons a {
+      font-size: 13px;
+    }
+  }
+  
+  
+  .social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    transition: color 0.3s;
+    padding: 8px;
+  }
+  
+  .social-icons a:hover {
+    color: #0064BD;
+  }
+  
+  /* Right Side: Navigation Links */
+  .nav-right {
+    display: flex;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #0064BD;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablet and Mobile View */
+  @media (max-width: 768px) {
+    .container {
+      flex-wrap: wrap;
+    }
+  
+    /* Hide navigation links by default */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #444;
+      padding: 10px;
+      gap: 10px;
+      width: 100%;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex; /* Show hamburger menu */
+    }
+  }
+  
+ /* Hide Header in Mobile View */
+@media (max-width: 768px) {
+    .header {
+      display: none; /* Hide the entire header */
+    }
+  }
+  

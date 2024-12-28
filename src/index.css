@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: "Vazirmatn", Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("C:\Users\Nibaka\Desktop\new-web\rubikworld-frontend\src\assets\fonts\Vazirmatn-Regular.woff2") format("woff2"),
+       url("C:\Users\Nibaka\Desktop\new-web\rubikworld-frontend\src\assets\fonts\Vazirmatn-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("C:\Users\Nibaka\Desktop\new-web\rubikworld-frontend\src\assets\fonts\Vazirmatn-Bold.woff2") format("woff2"),
+       url(" C:\Users\Nibaka\Desktop\new-web\rubikworld-frontend\src\assets\fonts\Vazirmatn-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+
+ 
+}

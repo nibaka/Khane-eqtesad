@@ -1,0 +1,232 @@
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  direction: rtl; /* Set the layout to right-to-left */
+}
+
+.featured-article {
+  position: relative;
+  width: 100%;
+  height: 450px; /* Full-height hero section */
+}
+
+/* Full-Width Background Image */
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: blur(2px) brightness(70%);
+}
+
+/* Overlay Content */
+.featured-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background: rgba(0, 0, 0, 0.3); /* Slight dark overlay */
+  padding: 50px 160px 20px 160px;
+  text-align: right; /* Align text to the right */
+}
+
+/* Main Title Section */
+.main-title .tag {
+  background-color: #004B8D; /* Highlight color */
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.main-title h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.3;
+  max-width: 600px; /* Limit text width */
+  margin-bottom: 10px;
+}
+
+.main-title .meta {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Subtitles Section */
+.subtitles {
+  display: flex;
+  justify-content: flex-start; /* Align subtitles to the right */
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  padding-top: 20px;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.subtitle {
+  flex: 1;
+  min-width: 200px;
+  text-align: right; /* Align subtitle text to the right */
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  border-radius: 0px;
+  padding: 15px 20px;
+  color: #fff; /* Text color contrasting the background */
+  backdrop-filter: blur(10px); /* Glass blur effect */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.subtitle:not(:last-child) {
+  border-left: 1px solid rgba(255, 255, 255, 0.3); /* Vertical line color and style */
+}
+
+/* Subtitle Titles */
+.subtitle h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.subtitle h3:hover {
+  color: #003B6E; /* Highlight hover color */
+}
+
+.subtitle p {
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* Responsive Design */
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .featured-article {
+      height: 400px;
+  }
+
+  .main-title h1 {
+      font-size: 28px;
+  }
+
+  .featured-overlay {
+      padding: 30px;
+  }
+
+  .subtitles {
+      gap: 15px;
+  }
+
+  .subtitle:not(:last-child) {
+      border-left: none; /* Remove vertical lines on smaller screens */
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+.hero-section {
+  width: 100%;
+  height: 70vh; /* Make Hero Section cover the full screen */
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-article {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Take up full height of the parent */
+}
+
+/* Full-Screen Image */
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Overlay Content */
+.featured-overlay {
+  position: absolute;
+  bottom: 20px; 
+  left: 10px;
+  right: 10px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark background */
+  color: white;
+  border-radius: 5px;
+}
+
+.main-title {
+  margin-bottom: 10px;
+}
+
+/* Tag Styling */
+.main-title .tag {
+  background-color: #003B6E;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* Main Title */
+.main-title h1 {
+  font-size: 20px; /* Smaller font size for mobile */
+  line-height: 1.3;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.main-title .meta {
+  font-size: 12px;
+  color: #ddd;
+}
+
+/* Subtitles Section (Below Hero Section) */
+.subtitles-container {
+  background-color: #fff; /* White background */
+  padding: 15px 10px; /* Add padding for content spacing */
+}
+
+.subtitles {
+  display: flex;
+  flex-direction: column; /* Stack subtitles vertically */
+  gap: 20px;
+  padding-top: 120px;
+  
+}
+
+.subtitle {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ddd; /* Light divider between items */
+}
+
+.subtitle:last-child {
+  border-bottom: none; /* Remove border for last item */
+}
+
+.subtitle h3 {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.subtitle p {
+  font-size: 12px;
+  color: #777;
+}
+}
